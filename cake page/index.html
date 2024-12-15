@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="cake.jpg"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Cake is not just a word<br><span>Cake is happiness !</span></h2><br>
+                <p>Life is like a cake; you never know what you're gonna get.<br>
+                    The secret ingredient is always love, and sometimes sprinkles.<br>
+                    Don't just eat cake, savor every bite and cherish the moment.<br>
+                    Cake is happiness! If you know the way of the cake, you know the way of happiness! <br>
+                    If you have a cake in front of you, you should not look any further for joy! </p>
+                    <a href="#">learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="cake1.jpg" class="cake">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.jpg" onclick="imgSlider"></li>
+            <li><img src="thumb2.jpg" onclick="imgSlider"></li>
+            <li><img src="thumb3.jpg" onclick="imgSlider"></li>
+        </ul>
+    </section>
+    <script  type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.happiness').sr=anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color
+        }
+    </script>
+        
+</body>
+</html>
